@@ -5,7 +5,7 @@
   "packageRules": [
     {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",
-      "matchPackageNames": ["eslint-plugin-unicorn"],
+      "matchPackageNames": ["*"],
       "additionalBranchPrefix": "",
       "commitMessageSuffix": ""
     }

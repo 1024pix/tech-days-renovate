@@ -1,5 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["github>1024pix/renovate-config:default"],
-  "enabled": true
+  "enabled": true,
+  "packageRules": [
+    {
+      "description": "Regroupe un même bump de folderA et folderB dans une seule PR",
+      "matchFileNames": ["folderA/**", "folderB/**"],
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "groupName": "{{{depName}}} (folderA + folderB)",
+      "groupSlug": "{{{depNameSanitized}}}-folderA-folderB-{{{newMajor}}}"
+    }
+  ]
 }

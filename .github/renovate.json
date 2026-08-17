@@ -5,7 +5,7 @@
   "packageRules": [
     {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",
-      "matchPackageNames": ["*"],
+      "matchPackageNames": ["!sinon"],
       "additionalBranchPrefix": "",
       "commitMessageSuffix": ""
     }

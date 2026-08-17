@@ -12,7 +12,7 @@
   },
   "private": true,
   "devDependencies": {
-    "eslint-plugin-unicorn": "^65.0.0",
+    "eslint-plugin-unicorn": "^70.0.0",
     "lodash": "^4.0.0",
     "qunit": "^1.0.0",
     "sinon": "^20.0.0"

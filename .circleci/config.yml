@@ -3,5 +3,5 @@ version: 2.1
 setup: true
 
 orbs:
-  path-filtering: circleci/path-filtering@2
+  path-filtering: circleci/path-filtering@3
   python: circleci/python@3.0.0

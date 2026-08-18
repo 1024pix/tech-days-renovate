@@ -162,6 +162,13 @@
       "commitMessageSuffix": ""
     },
     {
+      "description": "Famille postgresql (une PR par dependance) : driver JDBC de build.sbt ; l'addon Scalingo est gere par les presets partages",
+      "matchPackageNames": [
+        "/^org\\.postgresql:/"
+      ],
+      "groupName": null
+    },
+    {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",
       "matchPackageNames": [
         "/^eslint.*/"

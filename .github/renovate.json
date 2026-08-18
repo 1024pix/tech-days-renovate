@@ -41,7 +41,6 @@
       "groupName": "eslint",
       "additionalBranchPrefix": "",
       "commitMessageSuffix": "",
-      "separateMajorMinor": false,
       "separateMultipleMajor": false
     },
     {
@@ -50,14 +49,12 @@
       "groupName": "prettier",
       "additionalBranchPrefix": "",
       "commitMessageSuffix": "",
-      "separateMajorMinor": false,
       "separateMultipleMajor": false
     },
     { "matchPackageNames": ["/^sinon.*/"],
       "groupName": "sinon",
       "additionalBranchPrefix": "",
       "commitMessageSuffix": "",
-      "separateMajorMinor": false,
       "separateMultipleMajor": false
     },
     {
@@ -65,7 +62,6 @@
       "groupName": "qunit",
       "additionalBranchPrefix": "",
       "commitMessageSuffix": "",
-      "separateMajorMinor": false,
       "separateMultipleMajor": false
     }
   ]

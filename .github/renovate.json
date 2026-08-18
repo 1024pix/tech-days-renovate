@@ -150,7 +150,10 @@
       ],
       "groupName": "github-actions",
       "additionalBranchPrefix": "",
-      "commitMessageSuffix": ""
+      "commitMessageSuffix": "",
+      "separateMajorMinor": false,
+      "separateMultipleMajor": false,
+      "separateMinorPatch": false
     },
     {
       "description": "Famille orbs-circleci (confort) : orbs de config.yml et continue_config.yml",

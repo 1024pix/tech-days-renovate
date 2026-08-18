@@ -228,6 +228,11 @@
       "additionalBranchPrefix": "",
       "commitMessageSuffix": "",
       "separateMultipleMajor": false
+    },
+    {
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": ""
     }
   ]
 }

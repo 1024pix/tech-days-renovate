@@ -37,6 +37,39 @@
   ],
   "packageRules": [
     {
+      "description": "Spark : image de base, deps sbt et constante du DAG doivent bouger ensemble ; 4.x exige Scala 2.13",
+      "matchPackageNames": [
+        "spark",
+        "/^org\\.apache\\.spark:/"
+      ],
+      "groupName": "spark",
+      "allowedVersions": "/^3\\./"
+    },
+    {
+      "description": "Scala : binaire 2.12 impose par Spark 3.5 (build.sbt et tag de l'image sbt)",
+      "matchPackageNames": [
+        "org.scala-lang:scala-library"
+      ],
+      "groupName": "scala",
+      "allowedVersions": "/^2\\.12\\./"
+    },
+    {
+      "description": "JDK : image de build, image runtime et JDK de CI alignes sur 17",
+      "matchPackageNames": [
+        "java-jdk",
+        "eclipse-temurin"
+      ],
+      "groupName": "java",
+      "allowedVersions": "/^17($|\\.)/"
+    },
+    {
+      "description": "Agent JMX : version du Dockerfile et chemin du JAR dans le DAG",
+      "matchPackageNames": [
+        "prometheus/jmx_exporter"
+      ],
+      "groupName": "jmx exporter"
+    },
+    {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",
       "matchPackageNames": [
         "/^eslint.*/"

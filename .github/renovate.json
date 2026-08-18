@@ -37,12 +37,17 @@
   ],
   "packageRules": [
     {
-      "description": "Spark : image de base, deps sbt et constante du DAG doivent bouger ensemble ; 4.x exige Scala 2.13",
+      "description": "Famille spark (couplee) : image de base, deps sbt, spark-testing-base et SPARK_VERSION du DAG dans une seule PR ; 4.x exige Scala 2.13",
       "matchPackageNames": [
         "spark",
-        "/^org\\.apache\\.spark:/"
+        "/^org\\.apache\\.spark:/",
+        "/^com\\.holdenkarau:spark-/"
       ],
       "groupName": "spark",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMinorPatch": false,
+      "separateMultipleMajor": false,
       "allowedVersions": "/^3\\./"
     },
     {
@@ -89,14 +94,19 @@
       "commitMessageSuffix": "",
       "separateMultipleMajor": false
     },
-    { "matchPackageNames": ["/^sinon.*/"],
+    {
+      "matchPackageNames": [
+        "/^sinon.*/"
+      ],
       "groupName": "sinon",
       "additionalBranchPrefix": "",
       "commitMessageSuffix": "",
       "separateMultipleMajor": false
     },
     {
-      "matchPackageNames": ["/^qunit.*/"],
+      "matchPackageNames": [
+        "/^qunit.*/"
+      ],
       "groupName": "qunit",
       "additionalBranchPrefix": "",
       "commitMessageSuffix": "",

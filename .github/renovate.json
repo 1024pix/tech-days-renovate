@@ -183,6 +183,15 @@
       "groupName": null
     },
     {
+      "description": "Famille lockfile (confort) : rafraichissement hebdomadaire des lockfiles, workspaces uv et package-lock confondus",
+      "matchUpdateTypes": [
+        "lockFileMaintenance"
+      ],
+      "groupName": "lockfile",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": ""
+    },
+    {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",
       "matchPackageNames": [
         "/^eslint.*/"

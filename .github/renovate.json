@@ -6,6 +6,40 @@
   ],
   "enabled": true,
   "prConcurrentLimit": 20,
+  "customManagers": [
+    {
+      "description": "Track Spark version in PixSparkKubernetesOperator.py",
+      "customType": "regex",
+      "matchStrings": ["SPARK_VERSION = \"(?<currentValue>[^\"]+)\""],
+      "depNameTemplate": "org.apache.spark:spark-core_2.12",
+      "datasourceTemplate": "maven",
+      "managerFilePatterns": ["/data-pipelines/data_pipelines/helpers/PixSparkKubernetesOperator\\.py$/"]
+    },
+    {
+      "description": "Track Scala version in Dockerfile",
+      "customType": "regex",
+      "matchStrings": ["scala[- ]?(?<currentValue>\\d+\\.\\d+)"],
+      "depNameTemplate": "org.scala-lang:scala-library",
+      "datasourceTemplate": "maven",
+      "managerFilePatterns": ["/^Dockerfile$/"]
+    },
+    {
+      "description": "Track JMX Prometheus agent version in PixSparkKubernetesOperator.py",
+      "customType": "regex",
+      "matchStrings": ["jmx_prometheus_javaagent-(?<currentValue>[\\d.]+)\\.jar"],
+      "depNameTemplate": "prometheus/jmx_exporter",
+      "datasourceTemplate": "github-releases",
+      "managerFilePatterns": ["/data-pipelines/data_pipelines/helpers/PixSparkKubernetesOperator\\.py$/"]
+    },
+    {
+      "description": "Track JMX Prometheus agent version in Dockerfile",
+      "customType": "regex",
+      "matchStrings": ["JMX_EXPORTER_AGENT_VERSION=(?<currentValue>[\\d.]+)"],
+      "depNameTemplate": "prometheus/jmx_exporter",
+      "datasourceTemplate": "github-releases",
+      "managerFilePatterns": ["/^Dockerfile$/"]
+    }
+  ],
   "packageRules": [
     {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",

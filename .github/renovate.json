@@ -90,6 +90,18 @@
       "separateMultipleMajor": false
     },
     {
+      "description": "Famille python (couplee) : .python-version ; requires-python et le suffixe -pythonX.Y du tag airflow restent manuels",
+      "matchDepNames": [
+        "python"
+      ],
+      "groupName": "python",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMinorPatch": false,
+      "separateMultipleMajor": false,
+      "allowedVersions": "/^3\\.12/"
+    },
+    {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",
       "matchPackageNames": [
         "/^eslint.*/"

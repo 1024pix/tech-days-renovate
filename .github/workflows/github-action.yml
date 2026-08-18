@@ -5,6 +5,9 @@ on:
 jobs:
   build-and-push-image:
     runs-on: arc-runner-set
+    env:
+      # renovate: datasource=java-version depName=java packageName=java-jdk versioning=docker extractVersion=^(?<version>\d+)
+      JAVA_VERSION: "17"
     steps:
       - uses: actions/checkout@v6
 
@@ -12,7 +15,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 17
+          java-version: ${{ env.JAVA_VERSION }}
           cache: sbt
 
       - uses: sbt/setup-sbt@v1

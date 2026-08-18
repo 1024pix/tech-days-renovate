@@ -22,18 +22,6 @@
       ]
     },
     {
-      "description": "Track Scala version in Dockerfile",
-      "customType": "regex",
-      "matchStrings": [
-        "scala[- ]?(?<currentValue>\\d+\\.\\d+)"
-      ],
-      "depNameTemplate": "org.scala-lang:scala-library",
-      "datasourceTemplate": "maven",
-      "managerFilePatterns": [
-        "/^Dockerfile$/"
-      ]
-    },
-    {
       "description": "Track JMX Prometheus agent version in PixSparkKubernetesOperator.py",
       "customType": "regex",
       "matchStrings": [

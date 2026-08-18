@@ -172,20 +172,6 @@
       "groupName": null
     },
     {
-      "description": "Famille data-python (une PR par dependance) : librairies metier des DAGs et des services",
-      "matchPackageNames": [
-        "great-expectations",
-        "duckdb",
-        "pandas",
-        "boto3",
-        "psycopg2-binary",
-        "google-api-python-client",
-        "connexion",
-        "flask-session"
-      ],
-      "groupName": null
-    },
-    {
       "description": "Famille lockfile (confort) : rafraichissement hebdomadaire des lockfiles, workspaces uv et package-lock confondus",
       "matchUpdateTypes": [
         "lockFileMaintenance"

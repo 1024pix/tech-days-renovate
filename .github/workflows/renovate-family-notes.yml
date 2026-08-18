@@ -1,0 +1,38 @@
+name: Renovate family notes
+
+# Renovate cannot post a free-form comment on its own pull requests, and the steps
+# described in the notes cannot be automated on our setup: we run the Mend-hosted app,
+# where postUpgradeTasks is blocked. This workflow comments the manual procedure
+# instead, once, when the pull request is opened.
+
+on:
+  pull_request:
+    types: [opened]
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  airflow:
+    name: Airflow constraints reminder
+    if: startsWith(github.head_ref, 'renovate/airflow')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Comment the constraints procedure
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          airflow_version=$(grep -oE 'apache-airflow\[[^]]*\]==[0-9]+\.[0-9]+\.[0-9]+' pyproject.toml | head -1 | sed 's/.*==//')
+          python_version=$(tr -d '[:space:]' < .python-version)
+          sed -e "s/{{AIRFLOW_VERSION}}/${airflow_version}/g" \
+              -e "s/{{PYTHON_VERSION}}/${python_version}/g" \
+              .github/renovate-notes/airflow.md > "${RUNNER_TEMP}/comment.md"
+          gh pr comment "$PR" --body-file "${RUNNER_TEMP}/comment.md"

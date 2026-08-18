@@ -153,6 +153,15 @@
       "commitMessageSuffix": ""
     },
     {
+      "description": "Famille orbs-circleci (confort) : orbs de config.yml et continue_config.yml",
+      "matchDatasources": [
+        "orb"
+      ],
+      "groupName": "orbs-circleci",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": ""
+    },
+    {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",
       "matchPackageNames": [
         "/^eslint.*/"

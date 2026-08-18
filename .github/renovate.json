@@ -144,6 +144,15 @@
       "separateMinorPatch": false
     },
     {
+      "description": "Famille github-actions (confort) : les refs d'actions des workflows, hors variables *_VERSION annotees",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "groupName": "github-actions",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": ""
+    },
+    {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",
       "matchPackageNames": [
         "/^eslint.*/"

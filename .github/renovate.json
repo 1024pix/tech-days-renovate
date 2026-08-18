@@ -68,11 +68,14 @@
       "allowedVersions": "/^17($|\\.)/"
     },
     {
-      "description": "Agent JMX : version du Dockerfile et chemin du JAR dans le DAG",
-      "matchPackageNames": [
+      "description": "Famille jmx-prometheus (couplee) : ENV du Dockerfile et chemin du JAR dans le DAG",
+      "matchDepNames": [
         "prometheus/jmx_exporter"
       ],
-      "groupName": "jmx exporter"
+      "groupName": "jmx-prometheus",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMultipleMajor": false
     },
     {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",

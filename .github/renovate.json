@@ -15,11 +15,12 @@
       "matchStrings": [
         "SPARK_VERSION = \"(?<currentValue>[^\"]+)\""
       ],
-      "depNameTemplate": "org.apache.spark:spark-core_2.12",
-      "datasourceTemplate": "maven",
+      "depNameTemplate": "org.apache.spark:spark-core",
+      "datasourceTemplate": "sbt-package",
       "managerFilePatterns": [
         "/folder-python-A/folder_python_a/helpers/PixSparkKubernetesOperator\\.py$/"
-      ]
+      ],
+      "packageNameTemplate": "org.apache.spark:spark-core_2.12"
     },
     {
       "description": "Track JMX Prometheus agent version in PixSparkKubernetesOperator.py",

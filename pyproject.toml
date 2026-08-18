@@ -13,7 +13,7 @@ dependencies = [
     "great-expectations[postgresql]==1.18.0",
     "pandas==3.0.0",
     "boto3==1.43.0",
-    "sqlalchemy==2.0.48",
+    "sqlalchemy",
     "psycopg2-binary==2.9.12",
     "folder-python-A",
     "folder-python-B",

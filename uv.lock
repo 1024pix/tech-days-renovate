@@ -2989,7 +2989,7 @@ requires-dist = [
     { name = "great-expectations", extras = ["postgresql"], specifier = "==1.18.0" },
     { name = "pandas", specifier = "==3.0.0" },
     { name = "psycopg2-binary", specifier = "==2.9.12" },
-    { name = "sqlalchemy", specifier = "==2.0.48" },
+    { name = "sqlalchemy" },
 ]
 
 [package.metadata.requires-dev]

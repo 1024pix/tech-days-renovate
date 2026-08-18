@@ -1,7 +1,7 @@
 [project]
 name = "tech-days-renovate"
 version = "0.1.0"
-requires-python = ">=3.12, <3.13"
+requires-python = ">=3.14, <3.15"
 dependencies = [
     "apache-airflow-providers-fab==3.7.0",
     "apache-airflow[cncf-kubernetes,google-auth,postgres,slack]==3.2.0",

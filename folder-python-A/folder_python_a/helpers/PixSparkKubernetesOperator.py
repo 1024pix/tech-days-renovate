@@ -1,4 +1,4 @@
-SPARK_VERSION = "3.5.6"
+SPARK_VERSION = "3.5.9"
 
 
 def a():

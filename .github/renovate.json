@@ -127,6 +127,14 @@
       "groupName": "outillage-python"
     },
     {
+      "description": "Famille outillage-scala (confort) : plugins sbt de project/plugins.sbt et version scalafmt de .scalafmt.conf",
+      "matchDepNames": [
+        "scalafmt",
+        "/:sbt-/"
+      ],
+      "groupName": "outillage-scala"
+    },
+    {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",
       "matchPackageNames": [
         "/^eslint.*/"

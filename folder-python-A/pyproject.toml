@@ -1,3 +1,7 @@
 [project]
 name = "folder-python-A"
 version = "0.1.0"
+
+[tool.setuptools]
+# to exclude unwanted directories like `local`
+packages = ["folder_python_a"]

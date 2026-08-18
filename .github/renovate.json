@@ -52,6 +52,21 @@
       "commitMessageSuffix": "",
       "separateMajorMinor": false,
       "separateMultipleMajor": false
+    },
+    { "matchPackageNames": ["/^sinon.*/"],
+      "groupName": "sinon",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMajorMinor": false,
+      "separateMultipleMajor": false
+    },
+    {
+      "matchPackageNames": ["/^qunit.*/"],
+      "groupName": "qunit",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMajorMinor": false,
+      "separateMultipleMajor": false
     }
   ]
 }

@@ -135,6 +135,15 @@
       "groupName": "outillage-scala"
     },
     {
+      "description": "Famille tests-scala (confort) : scalatest et scalactic, publies ensemble et toujours a la meme version",
+      "matchPackageNames": [
+        "/^org\\.scalatest:/",
+        "/^org\\.scalactic:/"
+      ],
+      "groupName": "tests-scala",
+      "separateMinorPatch": false
+    },
+    {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",
       "matchPackageNames": [
         "/^eslint.*/"

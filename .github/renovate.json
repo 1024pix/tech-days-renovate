@@ -8,7 +8,15 @@
   "packageRules": [
     {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",
-      "matchPackageNames": ["eslint", "eslint-*", "prettier", "prettier-*"],
+      "matchPackageNames": ["eslint", "eslint-*"],
+      "groupName": "eslint",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": ""
+    },
+    {
+      "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",
+      "matchPackageNames": ["prettier", "prettier-*"],
+      "groupName": "prettier",
       "additionalBranchPrefix": "",
       "commitMessageSuffix": ""
     }

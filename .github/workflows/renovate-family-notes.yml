@@ -36,3 +36,22 @@ jobs:
               -e "s/{{PYTHON_VERSION}}/${python_version}/g" \
               .github/renovate-notes/airflow.md > "${RUNNER_TEMP}/comment.md"
           gh pr comment "$PR" --body-file "${RUNNER_TEMP}/comment.md"
+
+  spark:
+    name: Spark operator reminder
+    if: startsWith(github.head_ref, 'renovate/spark')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Comment the spark-operator check
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          spark_version=$(grep -oE 'SPARK_VERSION = "[^"]+"' folder-python-A/folder_python_a/helpers/PixSparkKubernetesOperator.py | sed 's/.*"\(.*\)"/\1/')
+          sed -e "s/{{SPARK_VERSION}}/${spark_version}/g" \
+              .github/renovate-notes/spark.md > "${RUNNER_TEMP}/comment.md"
+          gh pr comment "$PR" --body-file "${RUNNER_TEMP}/comment.md"

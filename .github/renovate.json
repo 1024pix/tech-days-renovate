@@ -51,23 +51,6 @@
       "allowedVersions": "/^3\\./"
     },
     {
-      "description": "Scala : binaire 2.12 impose par Spark 3.5 (build.sbt et tag de l'image sbt)",
-      "matchPackageNames": [
-        "org.scala-lang:scala-library"
-      ],
-      "groupName": "scala",
-      "allowedVersions": "/^2\\.12\\./"
-    },
-    {
-      "description": "JDK : image de build, image runtime et JDK de CI alignes sur 17",
-      "matchPackageNames": [
-        "java-jdk",
-        "eclipse-temurin"
-      ],
-      "groupName": "java",
-      "allowedVersions": "/^17($|\\.)/"
-    },
-    {
       "description": "Famille jmx-prometheus (couplee) : ENV du Dockerfile et chemin du JAR dans le DAG",
       "matchDepNames": [
         "prometheus/jmx_exporter"
@@ -100,6 +83,35 @@
       "separateMinorPatch": false,
       "separateMultipleMajor": false,
       "allowedVersions": "/^3\\.12/"
+    },
+    {
+      "description": "Famille toolchain-jvm (couplee) : Scala de build.sbt et du tag de l'image sbt, sbt de build.properties et du tag, JDK de l'image de build et de la CI",
+      "matchPackageNames": [
+        "org.scala-lang:scala-library",
+        "sbt/sbt",
+        "java-jdk",
+        "eclipse-temurin"
+      ],
+      "groupName": "toolchain-jvm",
+      "additionalBranchPrefix": "",
+      "commitMessageSuffix": "",
+      "separateMinorPatch": false,
+      "separateMultipleMajor": false
+    },
+    {
+      "description": "Scala : binaire 2.12 impose par Spark 3.5",
+      "matchPackageNames": [
+        "org.scala-lang:scala-library"
+      ],
+      "allowedVersions": "/^2\\.12\\./"
+    },
+    {
+      "description": "JDK : 17 impose par Spark 3.5, et par le java17 du tag spark: qui n'est pas trackable separement",
+      "matchPackageNames": [
+        "java-jdk",
+        "eclipse-temurin"
+      ],
+      "allowedVersions": "/^17($|\\.)/"
     },
     {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",

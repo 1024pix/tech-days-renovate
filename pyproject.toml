@@ -4,7 +4,17 @@ version = "0.1.0"
 requires-python = ">=3.12, <3.13"
 dependencies = [
     "apache-airflow-providers-fab==3.7.0",
+    "apache-airflow-providers-amazon[s3fs]==9.34.0",
     "apache-airflow[cncf-kubernetes,google-auth,postgres,slack]==3.2.0",
+    "connexion==3.2.0",
+    "flask-session==0.8.0",
+    "google-api-python-client==2.197.0",
+    "duckdb==1.5.0",
+    "great-expectations[postgresql]==1.18.0",
+    "pandas==3.0.0",
+    "boto3==1.43.0",
+    "sqlalchemy==2.0.48",
+    "psycopg2-binary==2.9.12",
     "folder-python-A",
     "folder-python-B",
 ]

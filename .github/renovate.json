@@ -5,6 +5,7 @@
     ":prHourlyLimitNone"
   ],
   "enabled": true,
+  "prConcurrentLimit": 20,
   "packageRules": [
     {
       "description": "Neutralise group-by-directory : une seule PR par dependance, tous dossiers confondus",

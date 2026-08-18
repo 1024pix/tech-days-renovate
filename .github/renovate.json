@@ -237,9 +237,7 @@
       "matchPackageNames": ["@1024pix/pix-ui"],
       "matchUpdateTypes": ["patch", "minor"],
       "groupName": "pix-ui",
-      "prConcurrentLimit": 0,
-      "separateMultipleMajor": false,
-      "separateMajorMinor": false
+      "prConcurrentLimit": 0
     }
   ]
 }

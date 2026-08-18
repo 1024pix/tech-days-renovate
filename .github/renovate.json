@@ -233,9 +233,11 @@
       "separateMultipleMajor": false
     },
     {
-      "matchUpdateTypes": ["lockFileMaintenance"],
-      "additionalBranchPrefix": "",
-      "commitMessageSuffix": ""
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["@1024pix/pix-ui"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "pix-ui",
+      "prConcurrentLimit": 0
     }
   ]
 }

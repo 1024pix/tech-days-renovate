@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v6
 
       - name: Notification Slack
-        uses: slackapi/slack-github-action@v3.0.0
+        uses: slackapi/slack-github-action@v3.0.5

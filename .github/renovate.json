@@ -3,11 +3,11 @@
   "extends": [
     "github>1024pix/renovate-config:default",
     ":prHourlyLimitNone",
+    ":prConcurrentLimitNone",
     "customManagers:dockerfileVersions",
     "customManagers:githubActionsVersions"
   ],
   "enabled": true,
-  "prConcurrentLimit": 20,
   "customManagers": [
     {
       "description": "Track Spark version in PixSparkKubernetesOperator.py",

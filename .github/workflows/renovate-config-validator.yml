@@ -24,3 +24,11 @@ jobs:
 
       - name: Validate Renovate config
         run: npx --yes --package renovate@latest -- renovate-config-validator --strict
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version-file: .python-version
+
+      - name: Check for dependencies pinned twice
+        run: python helpers/check_constraint_overlap.py

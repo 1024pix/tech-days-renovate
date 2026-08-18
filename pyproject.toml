@@ -3,7 +3,7 @@ name = "tech-days-renovate"
 version = "0.1.0"
 requires-python = ">=3.12, <3.13"
 dependencies = [
-    "apache-airflow-providers-fab==3.7.0",
+    "apache-airflow-providers-fab==3.8.0",
     "apache-airflow[cncf-kubernetes,google-auth,postgres,slack]==3.2.0",
     "folder-python-A",
     "folder-python-B",

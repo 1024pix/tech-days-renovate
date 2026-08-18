@@ -2,6 +2,7 @@ FROM sbtscala/scala-sbt:eclipse-temurin-17.0.19_10_1.12.14_2.12.21 AS sbt-depend
 
 FROM spark:3.5.6-scala2.12-java17-ubuntu AS spark-final
 
+# renovate: datasource=github-releases depName=prometheus/jmx_exporter
 ENV JMX_EXPORTER_AGENT_VERSION=1.5.0
 ADD https://github.com/prometheus/jmx_exporter/releases/download/${JMX_EXPORTER_AGENT_VERSION}/jmx_prometheus_javaagent-${JMX_EXPORTER_AGENT_VERSION}.jar /opt/spark/jars
 

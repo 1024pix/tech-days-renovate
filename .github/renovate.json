@@ -2,7 +2,9 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>1024pix/renovate-config:default",
-    ":prHourlyLimitNone"
+    ":prHourlyLimitNone",
+    "customManagers:dockerfileVersions",
+    "customManagers:githubActionsVersions"
   ],
   "enabled": true,
   "prConcurrentLimit": 20,
@@ -30,14 +32,6 @@
       "depNameTemplate": "prometheus/jmx_exporter",
       "datasourceTemplate": "github-releases",
       "managerFilePatterns": ["/data-pipelines/data_pipelines/helpers/PixSparkKubernetesOperator\\.py$/"]
-    },
-    {
-      "description": "Track JMX Prometheus agent version in Dockerfile",
-      "customType": "regex",
-      "matchStrings": ["JMX_EXPORTER_AGENT_VERSION=(?<currentValue>[\\d.]+)"],
-      "depNameTemplate": "prometheus/jmx_exporter",
-      "datasourceTemplate": "github-releases",
-      "managerFilePatterns": ["/^Dockerfile$/"]
     }
   ],
   "packageRules": [

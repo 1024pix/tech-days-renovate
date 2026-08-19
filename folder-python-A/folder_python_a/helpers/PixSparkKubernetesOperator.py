@@ -8,7 +8,7 @@ def a():
                 return {
                 "monitoring": {
                     "prometheus": {
-                        "jmxExporterJar": "/opt/spark/jars/jmx_prometheus_javaagent-1.5.0.jar",
+                        "jmxExporterJar": "/opt/spark/jars/jmx_prometheus_javaagent-1.6.0.jar",
                     },
                 },
             }

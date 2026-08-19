@@ -1,1 +1,1 @@
-FROM apache/airflow:3.3.0-python3.14
+FROM apache/airflow:3.3.1-python3.14

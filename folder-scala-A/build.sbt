@@ -27,8 +27,8 @@ lazy val root = (project in file("."))
     // base image, so it stays a runtime dependency and is pre-cached in Docker
     // (see Dockerfile Stage 1 sbt-dependencies).
     libraryDependencies += "org.apache.spark" %% "spark-hadoop-cloud" % "3.5.5",
-    libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.19",
-    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.19" % "test",
+    libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.20",
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.20" % "test",
     libraryDependencies += "com.holdenkarau" %% "spark-testing-base" % "3.5.5_2.0.1" % "test",
     Test / fork := true,
     Test / parallelExecution := false,

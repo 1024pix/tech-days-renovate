@@ -1382,7 +1382,7 @@ wheels = [
 
 [[package]]
 name = "great-expectations"
-version = "1.18.0"
+version = "1.20.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "altair" },
@@ -1404,9 +1404,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "tzlocal" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/62/05/28c96fb31e2655c719f5857b9af5243768bcca9e45b0eb37684f867a1fb3/great_expectations-1.18.0.tar.gz", hash = "sha256:e01f4f4c6a71e23997f81fd805d35cdf90763aa1e05060f4ea31f2b392898f47", size = 36280151, upload-time = "2026-06-02T12:51:08.795Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8a/b6/07e8ad9775826c2e261e28e2d572eb1fe80bd19d1858f2b068311dac2f8a/great_expectations-1.20.0.tar.gz", hash = "sha256:d6d6ed6a6437b81a452b6dbc201bd4403c3f96562788a1fcaf10848e96629864", size = 36310883, upload-time = "2026-08-07T14:08:14.021Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/12/b6/3ce841334971d09af6159ff5982ea5df7a21f0738cf78ed25f600272eb5f/great_expectations-1.18.0-py3-none-any.whl", hash = "sha256:2a2ce33d03a7421741870fe05c2258c2d6200dd220b61695448f92d19df27e92", size = 4946391, upload-time = "2026-06-02T12:51:04.753Z" },
+    { url = "https://files.pythonhosted.org/packages/74/57/351beba1b367e86183ee1e00cf64c286bac22dbc23b6ea02d971db06108a/great_expectations-1.20.0-py3-none-any.whl", hash = "sha256:cb6948e287826a039ea32f2f33add10fe276faf4278439431750250d46d74dd1", size = 4953172, upload-time = "2026-08-07T14:08:11.392Z" },
 ]
 
 [package.optional-dependencies]
@@ -2986,7 +2986,7 @@ requires-dist = [
     { name = "folder-python-a", editable = "folder-python-A" },
     { name = "folder-python-b", editable = "folder-python-B" },
     { name = "google-api-python-client", specifier = "==2.197.0" },
-    { name = "great-expectations", extras = ["postgresql"], specifier = "==1.18.0" },
+    { name = "great-expectations", extras = ["postgresql"], specifier = "==1.20.0" },
     { name = "pandas", specifier = "==3.0.0" },
     { name = "psycopg2-binary", specifier = "==2.9.12" },
     { name = "sqlalchemy" },

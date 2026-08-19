@@ -8,7 +8,7 @@
     "customManagers:githubActionsVersions",
     "helpers:pinGitHubActionDigests"
   ],
-  "enabled": false,
+  "enabled": true,
   "customManagers": [
     {
       "description": "Track Spark version in PixSparkKubernetesOperator.py",

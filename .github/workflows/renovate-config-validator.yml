@@ -9,7 +9,7 @@ on:
 jobs:
   validate:
     name: Validate Renovate config
-    runs-on: ubuntu-latest
+    runs-on: arc-runner-set
     env:
       # renovate: datasource=node-version depName=node
       NODE_VERSION: "22"

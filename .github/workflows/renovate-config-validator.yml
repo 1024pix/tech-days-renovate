@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # renovate: datasource=node-version depName=node
-      NODE_VERSION: "22"
+      NODE_VERSION: "24"
     steps:
       - name: Checkout
         uses: actions/checkout@v7

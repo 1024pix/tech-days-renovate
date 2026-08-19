@@ -4,7 +4,7 @@
 # renovate: datasource=docker depName=eclipse-temurin extractVersion=^(?<version>\d+\.\d+\.\d+_\d+)-jdk$
 ARG JAVA_VERSION=17.0.19_10
 # renovate: datasource=github-releases depName=sbt/sbt extractVersion=^v(?<version>\S+)$
-ARG SBT_VERSION=1.12.14
+ARG SBT_VERSION=2.0.6
 # renovate: datasource=maven depName=org.scala-lang:scala-library
 ARG SCALA_VERSION=2.12.21
 

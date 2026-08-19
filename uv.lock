@@ -922,7 +922,7 @@ wheels = [
 
 [[package]]
 name = "connexion"
-version = "3.2.0"
+version = "3.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "asgiref" },
@@ -937,9 +937,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "werkzeug" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/82/59/ab5e70ecc78d2dca582e240cb7fd0fd61f5f0ec6813813824ad55d67948d/connexion-3.2.0.tar.gz", hash = "sha256:0715d4a0393437aa2a48c144756360f9b5292635a05fd15c38cbbaf04ef5acb9", size = 86417, upload-time = "2025-01-08T09:13:52.579Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/70/5c/d07253d9c06b3c16c0eaa222f892ee97f9a2bec5df212efc80d888a6b11b/connexion-3.3.0.tar.gz", hash = "sha256:63e4b32c170c297f245b63e26a78e299d4df86f8f6f37ef1f70db62efaba77cf", size = 86496, upload-time = "2025-10-13T12:41:49.511Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/df/9d/2313b80ccb92b30944371b577be1d3ca3d1729305e52a2da62477c3ad701/connexion-3.2.0-py3-none-any.whl", hash = "sha256:905950337d40f526fb4f2eed3b15fc15d8c367625921ab9442954a025d3e03b3", size = 113388, upload-time = "2025-01-08T09:13:49.688Z" },
+    { url = "https://files.pythonhosted.org/packages/9d/3b/d9cbe13627ba18bc8c9fb3575aa818ba7b4b557e50be9c6e22c505273d75/connexion-3.3.0-py3-none-any.whl", hash = "sha256:4ed0b1a90f5a39f58e984b270b3e945c5038a1d064748a23478833027428102c", size = 113552, upload-time = "2025-10-13T12:41:48.133Z" },
 ]
 
 [[package]]
@@ -2980,7 +2980,7 @@ requires-dist = [
     { name = "apache-airflow-providers-amazon", extras = ["s3fs"], specifier = "==9.34.0" },
     { name = "apache-airflow-providers-fab", specifier = "==3.7.0" },
     { name = "boto3", specifier = "==1.43.0" },
-    { name = "connexion", specifier = "==3.2.0" },
+    { name = "connexion", specifier = "==3.3.0" },
     { name = "duckdb", specifier = "==1.5.0" },
     { name = "flask-session", specifier = "==0.8.0" },
     { name = "folder-python-a", editable = "folder-python-A" },

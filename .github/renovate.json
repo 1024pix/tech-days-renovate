@@ -5,7 +5,8 @@
     ":prHourlyLimitNone",
     ":prConcurrentLimitNone",
     "customManagers:dockerfileVersions",
-    "customManagers:githubActionsVersions"
+    "customManagers:githubActionsVersions",
+    "helpers:pinGitHubActionDigests"
   ],
   "enabled": true,
   "customManagers": [

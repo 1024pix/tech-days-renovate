@@ -2,8 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>1024pix/renovate-config:js-project",
-    "github>1024pix/renovate-config:data-project",
-    ":prHourlyLimitNone",
-    ":prConcurrentLimitNone"
+    "github>1024pix/renovate-config:data-project"
   ]
 }

@@ -17,7 +17,7 @@ Test / javaOptions ++= Seq(
 lazy val root = (project in file("."))
   .settings(
     name := "data-processing",
-    libraryDependencies += "org.postgresql" % "postgresql" % "42.7.10",
+    libraryDependencies += "org.postgresql" % "postgresql" % "42.7.13",
     // spark-core and spark-sql ship inside the Spark base image (see Dockerfile
     // Stage 2), so they are Provided: on the compile/test classpath but excluded
     // from the runtime classpath that gets pre-cached into the image.

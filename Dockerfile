@@ -10,7 +10,7 @@ ARG SCALA_VERSION=2.12.21
 
 FROM sbtscala/scala-sbt:eclipse-temurin-${JAVA_VERSION}_${SBT_VERSION}_${SCALA_VERSION} AS sbt-dependencies
 
-FROM spark:3.5.6-scala2.12-java17-ubuntu AS spark-final
+FROM spark:3.5.7-scala2.12-java17-ubuntu@sha256:de0c3cdfe8afa816b2ec25b9f568a4bf380f86d366cfbd46ad058fb721447cdf AS spark-final
 
 # renovate: datasource=github-releases depName=prometheus/jmx_exporter
 ENV JMX_EXPORTER_AGENT_VERSION=1.5.0

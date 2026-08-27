@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/(^|/)scalingo.json$/",
+        "/(^|/)(?:docker-)?compose[^/]*\\.ya?ml$/",
+        "/^.circleci/config.yml$/"
+      ],
+      "matchStrings": [
+        "\"plan\": \"postgresql:postgresql-sandbox\",\\s*.*\\s.*\"version\": \"(?<currentValue>.*)\"",
+        "image: postgres:(?<currentValue>.*)-alpine"
+      ],
+      "depNameTemplate": "postgres",
+      "datasourceTemplate": "custom.scalingo-postgres"
+    }
+  ]
+}

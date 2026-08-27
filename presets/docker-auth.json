@@ -1,0 +1,22 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "hostRules": [
+    {
+      "hostType": "docker",
+      "matchHost": "hub.docker.com",
+      "username": "pixdockerhub",
+      "password": "{{ secrets.PIX_DOCKER_PASSWORD }}"
+    },
+    {
+      "hostType": "docker",
+      "matchHost": "docker.io",
+      "username": "pixdockerhub",
+      "password": "{{ secrets.PIX_DOCKER_PASSWORD }}"
+    },
+    {
+      "matchHost": "https://hub.docker.com",
+      "username": "pixdockerhub",
+      "password": "{{ secrets.PIX_DOCKER_PASSWORD }}"
+    }
+  ]
+}

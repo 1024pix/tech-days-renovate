@@ -1,7 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>1024pix/renovate-config:js-project",
-    "github>1024pix/renovate-config:data-project"
-  ]
+  "extends": ["local>1024pix/renovate-config:js-project", "local>1024pix/renovate-config:data-project"]
 }

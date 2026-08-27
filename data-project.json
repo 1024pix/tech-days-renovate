@@ -1,0 +1,30 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "customManagers:dockerfileVersions",
+    "local>1024pix/renovate-config:default",
+    "local>1024pix/renovate-config//presets/data/airflow",
+    "local>1024pix/renovate-config//presets/data/constraints",
+    "local>1024pix/renovate-config//presets/data/dbt",
+    "local>1024pix/renovate-config//presets/data/jmx-prometheus",
+    "local>1024pix/renovate-config//presets/data/postgresql",
+    "local>1024pix/renovate-config//presets/data/python",
+    "local>1024pix/renovate-config//presets/data/spark",
+    "local>1024pix/renovate-config//presets/data/toolchain-jvm",
+    "local>1024pix/renovate-config//presets/data/toolchain-python",
+    "local>1024pix/renovate-config//presets/data/toolchain-scala"
+  ],
+  "prConcurrentLimit": 10,
+  "schedule": ["* * * * 1-5"],
+  "rebaseWhen": "auto",
+  "configMigration": true,
+  "packageRules": [
+    {
+      "description": "Automerge des patch pour toutes les dependances data",
+      "matchUpdateTypes": ["patch"],
+      "matchDepNames": ["!/^apache-airflow$/", "!/spark/"],
+      "addLabels": ["auto-bump"],
+      "automerge": true
+    }
+  ]
+}

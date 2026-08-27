@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": ["/^\\.circleci\\/.+\\.ya?ml$/"],
+      "matchStrings": [
+        "# renovate:? datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)\\s+[^:]+: (?<currentValue>.\\S+)"
+      ]
+    }
+  ]
+}

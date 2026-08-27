@@ -5,14 +5,10 @@
     {
       "description": "Track JMX Prometheus agent version in PixSparkKubernetesOperator.py",
       "customType": "regex",
-      "matchStrings": [
-        "jmx_prometheus_javaagent-(?<currentValue>[\\d.]+)\\.jar"
-      ],
+      "matchStrings": ["jmx_prometheus_javaagent-(?<currentValue>[\\d.]+)\\.jar"],
       "depNameTemplate": "prometheus/jmx_exporter",
       "datasourceTemplate": "github-releases",
-      "managerFilePatterns": [
-        "/data-pipelines/data_pipelines/helpers/PixSparkKubernetesOperator\\.py$/"
-      ]
+      "managerFilePatterns": ["/folder-python-A/folder_python_a/helpers/PixSparkKubernetesOperator\\.py$/"]
     }
   ],
   "packageRules": [

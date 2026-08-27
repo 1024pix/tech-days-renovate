@@ -10,7 +10,7 @@ dependencies = [
     "flask-session==0.8.0",
     "google-api-python-client==2.197.0",
     "duckdb==1.5.5",
-    "great-expectations[postgresql]==1.18.0",
+    "great-expectations[postgresql]==1.21.0",
     "pandas==3.0.5",
     "boto3==1.43.0",
     "sqlalchemy",

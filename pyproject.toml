@@ -6,7 +6,7 @@ dependencies = [
     "apache-airflow-providers-fab==3.7.0",
     "apache-airflow-providers-amazon[s3fs]==9.34.0",
     "apache-airflow[cncf-kubernetes,google-auth,postgres,slack]==3.2.0",
-    "connexion==3.2.0",
+    "connexion==3.3.0",
     "flask-session==0.8.0",
     "google-api-python-client==2.197.0",
     "duckdb==1.5.5",

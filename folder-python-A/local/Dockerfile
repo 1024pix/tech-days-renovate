@@ -1,1 +1,1 @@
-FROM apache/airflow:3.3.0-python3.14
+FROM apache/airflow:3.3.1-python3.14@sha256:d4ed2a3cf0103b52b69f5ee57cfaefd4274dca56b546c4396b83ccaf93057539

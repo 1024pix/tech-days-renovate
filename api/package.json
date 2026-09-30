@@ -12,6 +12,6 @@
   },
   "private": true,
   "devDependencies": {
-    "@1024pix/pix-ui": "^61.4.1"
+    "@1024pix/pix-ui": "^63.0.0"
   }
 }

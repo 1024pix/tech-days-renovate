@@ -13,7 +13,7 @@ FROM sbtscala/scala-sbt:eclipse-temurin-${JAVA_VERSION}_${SBT_VERSION}_${SCALA_V
 FROM spark:3.5.7-scala2.12-java17-ubuntu@sha256:de0c3cdfe8afa816b2ec25b9f568a4bf380f86d366cfbd46ad058fb721447cdf AS spark-final
 
 # renovate: datasource=github-releases depName=prometheus/jmx_exporter
-ENV JMX_EXPORTER_AGENT_VERSION=1.5.0
+ENV JMX_EXPORTER_AGENT_VERSION=1.6.0
 ADD https://github.com/prometheus/jmx_exporter/releases/download/${JMX_EXPORTER_AGENT_VERSION}/jmx_prometheus_javaagent-${JMX_EXPORTER_AGENT_VERSION}.jar /opt/spark/jars
 
 COPY data-processing/target/scala-2.12/data-processing.jar .
